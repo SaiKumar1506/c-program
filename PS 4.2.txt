@@ -1,4 +1,7 @@
-#include <stdio.h>
+write a program in c such that the program will read the elemets of a one dimensional array, then compares the elements and finds which the largest two elements are in a given array.???
+  
+  
+  #include <stdio.h>
 void swap(int* xp, int* yp)
 {
     int temp = *xp;
