@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int array[] = {16, 18, 27, 16, 23, 21, 19};
+    int size = sizeof(array)/sizeof(int);
+
+    printf("Array elements = {");
+    for(int i = 0; i < size; i++) {
+        printf("%d", array[i]);
+        if(i < size-1) {
+            printf(", ");
+        }
+    }
+    printf("}\n");
+
+    int temp;
+    for(int i = 0; i < size/2; i++) {
+        temp = array[i];
+        array[i] = array[size-1-i];
+        array[size-1-i] = temp;
+    }
+
+    printf("Reverse Array elements = {");
+    for(int i = 0; i < size; i++) {
+        printf("%d", array[i]);
+        if(i < size-1) {
+            printf(", ");
+        }
+    }
+    printf("}\n");
+
+    return 0;
+}
+
+
+
+output1:
+Array elements = {16, 18, 27, 16, 23, 21, 19}
+Reverse Array elements = {19, 21, 23, 16, 27, 18, 16}
