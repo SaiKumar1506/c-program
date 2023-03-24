@@ -77,3 +77,14 @@ Enter the marks in Python, C programming, Mathematics, and Physics:
 Total= 293
 Aggregate = 73.2
 FIRST DIVISION
+
+
+
+Enter the marks in Python, C programming, Mathematics, and Physics: 
+90
+91
+92
+93
+Total= 366
+Aggregate = 91.5
+DISTINCTION
