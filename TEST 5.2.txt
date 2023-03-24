@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main() {
+    float marks[4];
+    float total = 0, aggregate;
+    int i;
+
+    printf("Enter the marks in Python, C programming, Mathematics, and Physics: \n");
+    for (i = 0; i < 4; i++) {
+        scanf("%f", &marks[i]);
+        total += marks[i];
+    }
+
+    aggregate = total / 4;
+    printf("Total= %.0f\n", total);
+    printf("Aggregate = %.1f\n", aggregate);
+
+    if (aggregate >= 75) {
+        printf("DISTINCTION");
+    }
+    else if (aggregate >= 60 && aggregate < 75) {
+        printf("FIRST DIVISION");
+    }
+    else if (aggregate >= 50 && aggregate < 60) {
+        printf("SECOND DIVISION");
+    }
+    else if (aggregate >= 40 && aggregate < 50) {
+        printf("THIRD DIVISION");
+    }
+    else {
+        printf("FAIL");
+    }
+
+    return 0;
+}
+
+test cases:
+
+Enter the marks in Python, C programming, Mathematics, and Physics: 
+18
+76
+93
+65
+Total= 252
+Aggregate = 63.0
+FIRST DIVISION
+
+
+
+Enter the marks in Python, C programming, Mathematics, and Physics: 
+73
+78
+79
+75
+Total= 305
+Aggregate = 76.2
+DISTINCTION
+
+
+
+Enter the marks in Python, C programming, Mathematics, and Physics: 
+96
+73
+-85
+95
+Total= 179
+Aggregate = 44.8
+THIRD DIVISION
+
+
+
+Enter the marks in Python, C programming, Mathematics, and Physics: 
+78
+59.8
+76
+79
+Total= 293
+Aggregate = 73.2
+FIRST DIVISION
