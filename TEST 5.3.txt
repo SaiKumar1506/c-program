@@ -9,7 +9,7 @@ int main()
     int vowels = 0, consonants = 0;
     
     printf("Input a string: ");
-    scanf("%s", str);
+    scanf("%s",&str);
     
     count_vowel_consonant(str, &vowels, &consonants);
     
