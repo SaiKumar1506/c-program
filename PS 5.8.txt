@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Define the nested structures
 struct Address {
   char street[50];
   char city[50];
@@ -14,17 +13,17 @@ struct Person {
 };
 
 int main() {
-  // Declare a person struct variable
+  
   struct Person person1;
 
-  // Set the values of the person's fields
+ 
   strcpy(person1.name, "John Doe");
   person1.age = 30;
   strcpy(person1.address.street, "123 Main St");
   strcpy(person1.address.city, "Anytown");
   strcpy(person1.address.state, "CA");
 
-  // Print out the person's information
+  
   printf("Name: %s\n", person1.name);
   printf("Age: %d\n", person1.age);
   printf("Address: %s, %s, %s\n", person1.address.street, person1.address.city, person1.address.state);
